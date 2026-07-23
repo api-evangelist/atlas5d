@@ -1,7 +1,24 @@
 aid: atlas5d
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/atlas5d.png
 name: Atlas5D
-description: Atlas5D is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Atlas5D is a healthcare technology company that develops an Ambient Measurement System (AMS)
+  for assessing health and wellness through motion in any environment. Its passive, privacy-preserving sensor
+  platform recognizes specific individuals, characterizes and quantifies their movement, and interprets daily
+  routines to predict trends and assess risk of adverse events such as falls, without wearables, without
+  transmitting video, and without storing images. Atlas5D serves individuals monitoring aging loved ones,
+  assisted-living and other institutional care settings, and healthcare and clinical-trial teams that need
+  clinical-grade, real-world evidence of patient movement wherever people live. Backed by Techstars.
 url: https://raw.githubusercontent.com/api-evangelist/atlas5d/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Healthcare
+- Health Technology
+- Remote Patient Monitoring
+- Ambient Computing
+- Sensors
+- Aging in Place
+- Clinical Trials
+- Digital Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/atlas5d-domain-security.yml
 - type: Website
   url: https://atlas5d.com/
+- type: GitHubOrganization
+  url: https://github.com/atlas5d
+- type: TermsOfService
+  url: https://atlas5d.com/terms-of-service/
+- type: PrivacyPolicy
+  url: https://atlas5d.com/privacy-policy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
